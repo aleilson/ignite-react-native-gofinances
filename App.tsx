@@ -23,9 +23,9 @@ export default function App() {
     Poppins_700Bold
   });
 
-  const { setUserStoreLoading } = useAuth();
+  const { userStorageLoading } = useAuth();
 
-  if (!fontsLoaded || setUserStoreLoading ) {
+  if (!fontsLoaded || userStorageLoading ) {
     return <AppLoading />
   }
 
